@@ -1,0 +1,15 @@
+<ngt-mesh #mesh [scale]="[2, 2, 2]">
+  @if (shape==="box") {
+  <ngt-box-geometry />
+  }
+  @if (shape==="sphere") {
+  <ngt-sphere-geometry />
+  }
+  @if (shape==="cylinder") {
+  <ngt-cylinder-geometry />
+  }
+  @if (shape==="tetrahedron") {
+  <ngt-tetrahedron-geometry />
+  }
+  <ngt-mesh-standard-material [color]="color" />
+</ngt-mesh>

@@ -1,0 +1,9 @@
+<ngt-ambient-light intensity="0.7"></ngt-ambient-light>
+<ngt-point-light [position]="[10, 10, 10]" intensity="0.8"></ngt-point-light>
+<ngtc-physics [gravity]="[0, -2, 0]">
+  <app-plane>
+    @for (item of shapes(); track item.id) {
+    <app-shape [shape]="item.shape" [color]="item.color" [position]="item.position"></app-shape>
+    }
+  </app-plane>
+</ngtc-physics>
